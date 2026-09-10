@@ -913,13 +913,13 @@ if view == "Overview":
                 .dt.strftime("%d %b %H:%M")
             )
 
-            display_future["predicted_load_mw"] = (
-                display_future["predicted_load_mw"]
+            display_future["forecast_load_mw"] = (
+                display_future["forecast_load_mw"]
                 .round(2)
             )
 
-            display_future["renewable_forecast_mw"] = (
-                display_future["renewable_forecast_mw"]
+            display_future["forecast_renewable_mw"] = (
+                display_future["forecast_renewable_mw"]
                 .round(2)
             )
 
@@ -936,8 +936,8 @@ if view == "Overview":
             display_future = display_future[
                 [
                     "timestamp",
-                    "predicted_load_mw",
-                    "renewable_forecast_mw",
+                    "forecast_load_mw",
+                    "forecast_renewable_mw",
                     "supply_gap_mw",
                     "risk_score",
                     "risk_level",
